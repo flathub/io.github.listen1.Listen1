@@ -1,9 +1,9 @@
 app-id: io.github.listen1.Listen1
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "22.08"
+base-version: '22.08'
 sdk-extensions:
   # Node.js version: https://github.com/listen1/listen1_desktop/blob/7636b7d685e999a1894d393e64e3f8324280e6e5/.github/workflows/release.yml#L21
   - org.freedesktop.Sdk.Extension.node16
@@ -30,12 +30,12 @@ modules:
         # Don't add ELECTRON_CACHE
         XDG_CACHE_HOME: /run/build/listen1/flatpak-node/cache
         npm_config_nodedir: /usr/lib/sdk/node16
-        npm_config_offline: "true"
-        npm_config_no_save: "true"
+        npm_config_offline: 'true'
+        npm_config_no_save: 'true'
         npm_config_cache: /run/build/listen1/flatpak-node/npm-cache
         npm_config_loglevel: verbose
-        ELECTRON_SKIP_BINARY_DOWNLOAD: "true"
-        LENS_SKIP_DOWNLOAD_BINARIES: "true"
+        ELECTRON_SKIP_BINARY_DOWNLOAD: 'true'
+        LENS_SKIP_DOWNLOAD_BINARIES: 'true'
       arch:
         # https://github.com/sass/node-sass/issues/3033#issuecomment-763180778
         # The architecture of Electron, see https://electronjs.org/docs/tutorial/support#supported-platforms
@@ -72,8 +72,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/listen1/listen1_desktop.git
-        tag: v2.27.0
-        commit: 7636b7d685e999a1894d393e64e3f8324280e6e5
+        tag: v2.28.0
+        commit: f98b13360a49a1a4fdf9369b195fe72f1ed665c4
         x-checker-data:
           type: anitya
           project-id: 322736
