@@ -7806,8 +7806,14 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-arm64.zip\"",
-            "ln -s \"../electron-v13.6.9-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-arm64.zip/electron-v13.6.9-linux-arm64.zip\"",
+            "mkdir -p \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e\"",
+            "ln -s \"../SHASUMS256.txt-13.6.9\" \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e/SHASUMS256.txt\""
+        ],
+        "dest": "flatpak-node/cache/electron"
+    },
+    {
+        "type": "shell",
+        "commands": [
             "mkdir -p \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e\"",
             "ln -s \"../electron-v13.6.9-linux-arm64.zip\" \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e/electron-v13.6.9-linux-arm64.zip\""
         ],
@@ -7819,8 +7825,6 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-armv7l.zip\"",
-            "ln -s \"../electron-v13.6.9-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-armv7l.zip/electron-v13.6.9-linux-armv7l.zip\"",
             "mkdir -p \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e\"",
             "ln -s \"../electron-v13.6.9-linux-armv7l.zip\" \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e/electron-v13.6.9-linux-armv7l.zip\""
         ],
@@ -7832,8 +7836,6 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-ia32.zip\"",
-            "ln -s \"../electron-v13.6.9-linux-ia32.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-ia32.zip/electron-v13.6.9-linux-ia32.zip\"",
             "mkdir -p \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e\"",
             "ln -s \"../electron-v13.6.9-linux-ia32.zip\" \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e/electron-v13.6.9-linux-ia32.zip\""
         ],
@@ -7845,10 +7847,52 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-x64.zip\"",
-            "ln -s \"../electron-v13.6.9-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-x64.zip/electron-v13.6.9-linux-x64.zip\"",
             "mkdir -p \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e\"",
             "ln -s \"../electron-v13.6.9-linux-x64.zip\" \"b1af19f3cfca6cfe9b9d89de836563f02eae215f3b04deafc8dd320e24c4578e/electron-v13.6.9-linux-x64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "x86_64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-arm64.zip\"",
+            "ln -s \"../electron-v13.6.9-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-arm64.zip/electron-v13.6.9-linux-arm64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "aarch64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-armv7l.zip\"",
+            "ln -s \"../electron-v13.6.9-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-armv7l.zip/electron-v13.6.9-linux-armv7l.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "arm"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-ia32.zip\"",
+            "ln -s \"../electron-v13.6.9-linux-ia32.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-ia32.zip/electron-v13.6.9-linux-ia32.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "i386"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-x64.zip\"",
+            "ln -s \"../electron-v13.6.9-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv13.6.9electron-v13.6.9-linux-x64.zip/electron-v13.6.9-linux-x64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
