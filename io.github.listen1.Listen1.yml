@@ -72,8 +72,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/listen1/listen1_desktop.git
-        tag: v2.31.0
-        commit: 5b49b73d3d980fd488cf7600f9309f1c6ad4b7d3
+        tag: v2.32.0
+        commit: 9a7fa1c0d73b1a70021e471906a592b3488964b3
         x-checker-data:
           type: anitya
           project-id: 322736
