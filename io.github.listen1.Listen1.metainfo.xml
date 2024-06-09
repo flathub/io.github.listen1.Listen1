@@ -33,6 +33,9 @@
     <url type="bugtracker">https://github.com/listen1/listen1_desktop/issues</url>
     <url type="vcs-browser">https://github.com/listen1/listen1_desktop</url>
     <releases>
+        <release version="2.32.0" date="2024-06-09">
+            <description></description>
+        </release>
         <release version="2.31.0" date="2023-07-29"/>
         <release version="2.30.0" date="2023-07-15"/>
         <release version="2.29.0" date="2023-07-14"/>
