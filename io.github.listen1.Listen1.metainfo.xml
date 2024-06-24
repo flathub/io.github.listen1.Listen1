@@ -6,22 +6,23 @@
     <name>Listen 1</name>
     <developer_name>Listen 1</developer_name>
     <summary>One for all free music in China</summary>
+    <launchable type="desktop-id">io.github.listen1.Listen1</launchable>
     <description>
         <p>
             Listen 1 can search and play songs from many major music sites, making your music
             library more comprehensive. And supports the collection function, conveniently create
             your own song list.
         </p>
-        <p>Supported music platforms: <ul>
-                <li>NetEase Cloud Music</li>
-                <li>QQ Music</li>
-                <li>Kugou Music</li>
-                <li>Kuwo Music</li>
-                <li>bilibili</li>
-                <li>Migu Music</li>
-                <li>Qian Qian Music</li>
-            </ul>
-        </p>
+        <p>Supported music platforms:</p>
+        <ul>
+            <li>NetEase Cloud Music</li>
+            <li>QQ Music</li>
+            <li>Kugou Music</li>
+            <li>Kuwo Music</li>
+            <li>bilibili</li>
+            <li>Migu Music</li>
+            <li>Qian Qian Music</li>
+        </ul>
     </description>
     <screenshots>
         <screenshot type="default">
@@ -33,11 +34,13 @@
     <url type="bugtracker">https://github.com/listen1/listen1_desktop/issues</url>
     <url type="vcs-browser">https://github.com/listen1/listen1_desktop</url>
     <releases>
+        <release version="2.32.0" date="2024-06-16">
+            <description></description>
+        </release>
         <release version="2.31.0" date="2023-07-29"/>
         <release version="2.30.0" date="2023-07-15"/>
         <release version="2.29.0" date="2023-07-14"/>
         <release version="2.28.0" date="2023-05-20"/>
-        <release version="v2.27.0" date="2022-10-10"/>
     </releases>
 
     <content_rating type="oars-1.1">
