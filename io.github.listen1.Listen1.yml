@@ -1,12 +1,12 @@
 app-id: io.github.listen1.Listen1
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+base-version: '25.08'
 sdk-extensions:
   # Node.js version: https://github.com/listen1/listen1_desktop/blob/7636b7d685e999a1894d393e64e3f8324280e6e5/.github/workflows/release.yml#L21
-  - org.freedesktop.Sdk.Extension.node16
+  - org.freedesktop.Sdk.Extension.node20
 command: listen1
 finish-args:
   - --device=dri
