@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
     <id>io.github.listen1.Listen1</id>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>MIT</project_license>
     <name>Listen 1</name>
-    <developer id="io.github.listen1"><name>Listen 1</name></developer>
+    <developer id="io.github.listen1">
+		<name>Listen 1</name>
+	</developer>
     <summary>One for all free music in China</summary>
     <launchable type="desktop-id">io.github.listen1.Listen1.desktop</launchable>
     <description>
@@ -13,7 +15,7 @@
             library more comprehensive. And supports the collection function, conveniently create
             your own song list.
         </p>
-	<p>Supported music platforms:</p>
+		<p>Supported music platforms:</p>
         <ul>
             <li>NetEase Cloud Music</li>
             <li>QQ Music</li>
@@ -26,20 +28,15 @@
     </description>
     <screenshots>
         <screenshot type="default">
-            <image>
-                https://i.imgur.com/Ae6ItmA.png</image>
+            <image>https://i.imgur.com/Ae6ItmA.png</image>
         </screenshot>
     </screenshots>
     <url type="homepage">https://listen1.github.io/listen1</url>
     <url type="bugtracker">https://github.com/listen1/listen1_desktop/issues</url>
     <url type="vcs-browser">https://github.com/listen1/listen1_desktop</url>
     <releases>
-	<release version="2.33.0" date="2026-03-21">
-			<description></description>
-	</release>
-	<release version="2.32.0" date="2024-06-16">
-            <description/>
-        </release>
+		<release version="2.33.0" date="2026-03-21"/>
+		<release version="2.32.0" date="2024-06-16"/>
         <release version="2.31.0" date="2023-07-29"/>
         <release version="2.30.0" date="2023-07-15"/>
         <release version="2.29.0" date="2023-07-14"/>
