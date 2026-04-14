@@ -1,18 +1,19 @@
 app-id: io.github.listen1.Listen1
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+base-version: '25.08'
 sdk-extensions:
-  # Node.js version: https://github.com/listen1/listen1_desktop/blob/7636b7d685e999a1894d393e64e3f8324280e6e5/.github/workflows/release.yml#L21
-  - org.freedesktop.Sdk.Extension.node16
+  # Higher than the upstream build version because Flathub requires an non-EOL SDK
+  - org.freedesktop.Sdk.Extension.node22
 command: listen1
 finish-args:
   - --device=dri
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --filesystem=xdg-music
   - --talk-name=org.freedesktop.Notifications
@@ -25,11 +26,11 @@ modules:
     buildsystem: simple
     build-options:
       # Add the node bin directory.
-      append-path: /usr/lib/sdk/node16/bin:/run/build/listen1/flatpak-node/chromedrive
+      append-path: /usr/lib/sdk/node22/bin:/run/build/listen1/flatpak-node/chromedrive
       env:
         # Don't add ELECTRON_CACHE
         XDG_CACHE_HOME: /run/build/listen1/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node16
+        npm_config_nodedir: /usr/lib/sdk/node22
         npm_config_offline: 'true'
         npm_config_no_save: 'true'
         npm_config_cache: /run/build/listen1/flatpak-node/npm-cache
