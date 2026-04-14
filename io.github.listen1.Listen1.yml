@@ -1,12 +1,12 @@
 app-id: io.github.listen1.Listen1
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '25.08'
 sdk-extensions:
-  # Higher than the upstream build version because Flathub now requires the SDK version 23.08+, which supports at least node 18
-  - org.freedesktop.Sdk.Extension.node18
+  # Higher than the upstream build version because Flathub requires an non-EOL SDK
+  - org.freedesktop.Sdk.Extension.node22
 command: listen1
 finish-args:
   - --device=dri
@@ -26,11 +26,11 @@ modules:
     buildsystem: simple
     build-options:
       # Add the node bin directory.
-      append-path: /usr/lib/sdk/node18/bin:/run/build/listen1/flatpak-node/chromedrive
+      append-path: /usr/lib/sdk/node22/bin:/run/build/listen1/flatpak-node/chromedrive
       env:
         # Don't add ELECTRON_CACHE
         XDG_CACHE_HOME: /run/build/listen1/flatpak-node/cache
-        npm_config_nodedir: /usr/lib/sdk/node18
+        npm_config_nodedir: /usr/lib/sdk/node22
         npm_config_offline: 'true'
         npm_config_no_save: 'true'
         npm_config_cache: /run/build/listen1/flatpak-node/npm-cache
